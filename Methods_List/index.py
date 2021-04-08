@@ -1,5 +1,5 @@
 # list.index(element, start, end)
-# list에서 왼쪽부터 element가 몇 번째에 처음 등장하는지를 반환한다.
+# list에서 왼쪽부터 element 처음 등장한 index를 반환한다.
 # start, end가 제공되는 경우, 범위를 지정할 수 있다.
 # element가 list내에 없는 경우에는 'ValueError'가 발생한다.
 
