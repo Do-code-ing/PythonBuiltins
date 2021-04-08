@@ -48,7 +48,6 @@ print(set_a.issubset(set_c))
 print(set_a <= set_c)
 # True
 # 진부분집합인지 검사
-print(set_a.issubset(set_c))
 print(set_a < (set_c))
 # True
 
@@ -57,7 +56,6 @@ print(set_c.issuperset(set_a))
 print(set_c >= (set_a))
 # True
 # 진상위집합인지 검사
-print(set_c.issuperset(set_a))
 print(set_c > (set_a))
 # True
 
@@ -76,7 +74,7 @@ print(set_c.difference(set_a))
 print(set_c - set_a)
 # {4, 5}
 
-# 두 집합의 여집합 반환
+# 두 집합의 대칭차집합 반환
 print(set_b.symmetric_difference(set_d))
 print(set_b ^ set_d)
 # {1, 2}
@@ -126,7 +124,7 @@ set_a -= set_b
 print(set_a)
 # set_a = {1, 2, 3, 6}
 
-# 두 집합의 여집합을 해당 집합에 반환
+# 두 집합의 대칭차집합을 해당 집합에 반환
 set_a.symmetric_difference(set_d)
 set_a ^= set_d
 print(set_a)
