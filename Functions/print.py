@@ -11,6 +11,7 @@
 
 # objects만 사용
 import time
+
 name = "Sang-Min"
 str_a = "안녕?"
 print(name, "이(가) 말합니다.", str_a)
@@ -25,12 +26,11 @@ print(name, "이(가) 말합니다.", str_a, end=" (이)라고 말이죠.\n")
 # Sang-Min 이(가) 말합니다. 안녕? (이)라고 말이죠.
 
 # file 사용 (기존 print_file.txt를 삭제해보고 진행해보자)
-p_file = open("study_builtins/print_file.txt", "w", encoding="utf-8")
+p_file = open("./print_file.txt", "w", encoding="utf-8")
 print(name, "이(가) 말합니다.", str_a, file=p_file)
 # 새로 생긴 'print_file.txt'를 확인해보세요.
 
 # flush 사용
-
 for i in range(1, 6):
     print(i, end=" ", flush=True)
     time.sleep(1)
