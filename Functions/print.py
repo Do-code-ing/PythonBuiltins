@@ -10,9 +10,7 @@
 #         기본값 = False
 
 # objects만 사용
-from os import write
-
-
+import time
 name = "Sang-Min"
 str_a = "안녕?"
 print(name, "이(가) 말합니다.", str_a)
@@ -32,7 +30,6 @@ print(name, "이(가) 말합니다.", str_a, file=p_file)
 # 새로 생긴 'print_file.txt'를 확인해보세요.
 
 # flush 사용
-import time
 
 for i in range(1, 6):
     print(i, end=" ", flush=True)
